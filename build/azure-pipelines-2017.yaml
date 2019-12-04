@@ -22,4 +22,10 @@ steps:
     command: 'pack'
     packagesToPack: 'src/2017/Jpp.Cedar.BaseApi.nuspec'
     packDestination: '$(Build.ArtifactStagingDirectory)'   
+    
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 
