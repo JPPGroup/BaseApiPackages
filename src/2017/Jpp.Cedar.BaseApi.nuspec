@@ -3,11 +3,12 @@
   <metadata>
     <id>Jpp.Cedar.BaseApi.2017</id>
     <title>Cedar Base 2017 Libraries</title>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <authors>JPP Consulting</authors>
     <description>Base 2017 references for Cedar</description>
   </metadata>
   <files>
     <file src="src\**" target="lib/net452" />
+    <file src="..\tools\*.*" target="tools" />
   </files>
 </package>
