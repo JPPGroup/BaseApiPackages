@@ -20,7 +20,7 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'pack'
-    packagesToPack: 'src/Ironstone/2019/Jpp.Cedar.BaseApi.nuspec'
+    packagesToPack: 'src/Ironstone/2019/Jpp.Ironstone.BaseApi.nuspec'
     packDestination: '$(Build.ArtifactStagingDirectory)'   
     
 - task: PublishBuildArtifacts@1
