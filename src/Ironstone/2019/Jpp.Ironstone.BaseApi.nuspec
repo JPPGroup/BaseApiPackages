@@ -3,12 +3,14 @@
   <metadata>
     <id>Jpp.Ironstone.BaseApi.2019</id>
     <title>Ironstone Base 2019 Libraries</title>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
     <authors>JPP Consulting</authors>
     <description>Base 2019 references for Ironstone</description>
   </metadata>
   <files>
-    <file src="src\**" target="lib/net47" />
+    <file src="src\accoremgd.dll" target="lib/net47" />
+	<file src="src\Acdbmgd.dll" target="lib/net47" />
+	<file src="src\acdbmgdbrep.dll" target="lib/net47" />
 	<file src="..\..\tools\*.*" target="tools" />
   </files>
 </package>

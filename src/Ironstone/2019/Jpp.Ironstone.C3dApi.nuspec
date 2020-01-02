@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Jpp.Ironstone.C3dApi.2019</id>
+    <title>Ironstone C3D 2019 Libraries</title>
+    <version>0.0.1</version>
+    <authors>JPP Consulting</authors>
+    <description>C3D 2019 references for Ironstone</description>
+  </metadata>
+  <files>
+    <file src="src\AeccDbMgd.dll" target="lib/net47" />
+	<file src="..\..\tools\*.*" target="tools" />
+  </files>
+</package>
