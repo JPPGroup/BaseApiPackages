@@ -23,6 +23,18 @@ steps:
     packagesToPack: 'src/Ironstone/2019/Jpp.Ironstone.BaseApi.nuspec'
     packDestination: '$(Build.ArtifactStagingDirectory)'   
     
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'src/Ironstone/2019/Jpp.Ironstone.UiApi.nuspec'
+    packDestination: '$(Build.ArtifactStagingDirectory)'   
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'pack'
+    packagesToPack: 'src/Ironstone/2019/Jpp.Ironstone.C3dApi.nuspec'
+    packDestination: '$(Build.ArtifactStagingDirectory)'       
+    
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
