@@ -3,13 +3,14 @@
   <metadata>
     <id>Jpp.Ironstone.UiApi.2019</id>
     <title>Ironstone UI 2019 Libraries</title>
-    <version>0.1.0</version>
+    <version>0.1.1</version>
     <authors>JPP Consulting</authors>
     <description>UI 2019 references for Ironstone</description>
   </metadata>
   <files>
     <file src="src\acmgd.dll" target="lib/net47" />
 	<file src="src\AdWindows.dll" target="lib/net47" />
+	<file src="src\AdUiPalettes.dll" target="lib/net47" />
 	<file src="..\..\tools\*.*" target="tools" />
   </files>
 </package>
