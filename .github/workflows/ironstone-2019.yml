@@ -21,4 +21,4 @@ jobs:
     - name: Add Github Source
       run: nuget sources add -name "github" -Source https://nuget.pkg.github.com/jppgroup/index.json -Username jppgroup -Password ${{ secrets.GITHUB_TOKEN }}
     - name: Publish
-      run: nuget push **\*.nupkg -source "github"
+      run: nuget push **\*.nupkg -source "github" --skip-duplicate
