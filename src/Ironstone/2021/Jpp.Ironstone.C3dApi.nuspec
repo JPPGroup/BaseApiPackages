@@ -3,7 +3,7 @@
   <metadata>
     <id>Jpp.Ironstone.C3dApi.2021</id>
     <title>Ironstone C3D 2021 Libraries</title>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
     <authors>JPP Consulting</authors>
     <description>C3D 2021 references for Ironstone</description>
 	<repository type="git" url="https://github.com/JPPGroup/BaseApiPackages"/>
