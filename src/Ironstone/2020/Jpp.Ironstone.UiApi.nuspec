@@ -3,7 +3,7 @@
   <metadata>
     <id>Jpp.Ironstone.UiApi.2020</id>
     <title>Ironstone UI 2020 Libraries</title>
-    <version>0.2.0</version>
+    <version>0.2.1</version>
     <authors>JPP Consulting</authors>
     <description>UI 2020 references for Ironstone</description>
 	<repository type="git" url="https://github.com/JPPGroup/BaseApiPackages"/>
