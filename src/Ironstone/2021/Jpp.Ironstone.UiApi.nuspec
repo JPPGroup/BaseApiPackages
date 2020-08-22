@@ -6,6 +6,7 @@
     <version>0.2.0</version>
     <authors>JPP Consulting</authors>
     <description>UI 2021 references for Ironstone</description>
+	<repository type="git" url="https://github.com/JPPGroup/BaseApiPackages"/>
   </metadata>
   <files>
     <file src="src\acmgd.dll" target="lib/net47" />
