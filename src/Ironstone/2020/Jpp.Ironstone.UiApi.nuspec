@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Jpp.Ironstone.UiApi.2020</id>
+    <title>Ironstone UI 2020 Libraries</title>
+    <version>0.1.1</version>
+    <authors>JPP Consulting</authors>
+    <description>UI 2020 references for Ironstone</description>
+  </metadata>
+  <files>
+    <file src="src\acmgd.dll" target="lib/net47" />
+	<file src="src\AdWindows.dll" target="lib/net47" />
+	<file src="src\AdUiPalettes.dll" target="lib/net47" />
+	<file src="..\..\tools\*.*" target="tools" />
+  </files>
+</package>
