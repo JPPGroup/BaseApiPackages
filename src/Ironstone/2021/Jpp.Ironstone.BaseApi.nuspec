@@ -3,7 +3,7 @@
   <metadata>
     <id>Jpp.Ironstone.BaseApi.2021</id>
     <title>Ironstone Base 2021 Libraries</title>
-    <version>0.2.3</version>
+    <version>0.2.4</version>
     <authors>JPP Consulting</authors>
     <description>Base 2021 references for Ironstone</description>
 	<repository type="git" url="https://github.com/JPPGroup/BaseApiPackages"/>
