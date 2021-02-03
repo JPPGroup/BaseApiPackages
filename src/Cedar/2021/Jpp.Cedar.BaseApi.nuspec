@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>Jpp.Cedar.BaseApi.2021</id>
+    <title>Cedar Base 2020 Libraries</title>
+    <version>0.1.0</version>
+    <authors>JPP Consulting</authors>
+    <description>Base 2021 references for Cedar</description>
+	<repository type="git" url="https://github.com/JPPGroup/BaseApiPackages"/>
+  </metadata>
+  <files>
+    <file src="src\**" target="lib/net48" />
+	<file src="..\..\tools\*.*" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,20 @@
+on:
+  push:
+    branches: [ master ]
+    paths:
+    - 'src/Cedar/2020/**'
+      
+jobs:  
+  build:    
+    runs-on: ubuntu-latest
+    
+    steps:    
+    - uses: actions/checkout@v2   
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1
+    - name: Pack
+      run: nuget pack src/Cedar/2020/Jpp.Cedar.BaseApi.nuspec      
+    - name: Add Github Source
+      run: nuget sources add -name "github" -Source https://nuget.pkg.github.com/jppgroup/index.json -Username jppgroup -Password ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish
+      run: nuget push **\*.nupkg -source "github" -SkipDuplicate

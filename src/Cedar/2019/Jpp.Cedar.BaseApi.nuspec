@@ -3,9 +3,10 @@
   <metadata>
     <id>Jpp.Cedar.BaseApi.2019</id>
     <title>Cedar Base 2019 Libraries</title>
-    <version>0.0.2</version>
+    <version>0.1.0</version>
     <authors>JPP Consulting</authors>
     <description>Base 2019 references for Cedar</description>
+	<repository type="git" url="https://github.com/JPPGroup/BaseApiPackages"/>
   </metadata>
   <files>
     <file src="src\**" target="lib/net47" />
