@@ -11,7 +11,7 @@ jobs:
     steps:    
     - uses: actions/checkout@v2   
     - name: Setup NuGet
-      uses: NuGet/setup-nuget@v1.0.2
+      uses: NuGet/setup-nuget@v1
     - name: Pack
       run: nuget pack src/Ironstone/2020/Jpp.Ironstone.BaseApi.nuspec      
     - name: Pack
