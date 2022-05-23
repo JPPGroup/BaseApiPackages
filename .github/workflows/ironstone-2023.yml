@@ -1,0 +1,25 @@
+on:
+  push:
+    branches: [ master ]
+    paths:
+    - 'src/Ironstone/2023/**'
+  workflow_dispatch:
+      
+jobs:  
+  build:    
+    runs-on: ubuntu-latest
+    
+    steps:    
+    - uses: actions/checkout@v2   
+    - name: Setup NuGet
+      uses: NuGet/setup-nuget@v1
+    - name: Pack
+      run: nuget pack src/Ironstone/2023/Jpp.Ironstone.BaseApi.nuspec      
+    - name: Pack
+      run: nuget pack src/Ironstone/2023/Jpp.Ironstone.C3dApi.nuspec
+    - name: Pack
+      run: nuget pack src/Ironstone/2023/Jpp.Ironstone.UiApi.nuspec
+    - name: Add Github Source
+      run: nuget sources add -name "github" -Source https://nuget.pkg.github.com/jppgroup/index.json -Username jppgroup -Password ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish
+      run: nuget push **\*.nupkg -source "github" -SkipDuplicate
