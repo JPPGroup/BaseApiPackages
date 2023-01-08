@@ -3,14 +3,14 @@
   <metadata>
     <id>Jpp.Ironstone.BaseApi.2023</id>
     <title>Ironstone Base 2023 Libraries</title>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <authors>JPP Consulting</authors>
     <description>Base 2023 references for Ironstone</description>
 	<repository type="git" url="https://github.com/JPPGroup/BaseApiPackages"/>
   </metadata>
   <files>
-    <file src="src\accoremgd.dll" target="lib/net47" />
-	<file src="src\Acdbmgd.dll" target="lib/net47" />
+    <file src="src\AcCoreMgd.dll" target="lib/net47" />
+	<file src="src\AcDbMgd.dll" target="lib/net47" />
 	<file src="src\acdbmgdbrep.dll" target="lib/net47" />
 	<file src="..\..\tools\*.*" target="tools" />
   </files>
