@@ -3,13 +3,14 @@ on:
     branches: [ master ]
     paths:
     - 'src/Cedar/2022/**'
+  workflow_dispatch:
       
 jobs:  
   build:    
     runs-on: ubuntu-latest
     
     steps:    
-    - uses: actions/checkout@v2   
+    - uses: actions/checkout@v3   
     - name: Setup NuGet
       uses: NuGet/setup-nuget@v1
     - name: Pack
@@ -17,4 +18,4 @@ jobs:
     - name: Add Github Source
       run: nuget sources add -name "github" -Source https://nuget.pkg.github.com/jppgroup/index.json -Username jppgroup -Password ${{ secrets.GITHUB_TOKEN }}
     - name: Publish
-      run: nuget push **\*.nupkg -source "github" -SkipDuplicate
+      run: nuget push **\*.nupkg -source "github" -SkipDuplicate -ApiKey ${{ secrets.GITHUB_TOKEN }}
